@@ -16,8 +16,3 @@ main = do
    frequency <- return ( foldl (charsCount) [] src )
    minimum' <- return ( minimumFrequency frequency )
    print [ ch | ( ch, num ) <- frequency, num == minimum' ]
--- ^   print ( charsCount [ ( 'w', 1 ), ( 'b', 1 ), ( 'd', 2 ) ] 's' )
--- ^   writeFile "file.out" (operate src)
-
-
--- ^operate = x
